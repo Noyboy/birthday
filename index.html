@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Sadbhawna ❤️</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- PASSWORD SCREEN -->
+
+<div id="passwordPage" class="page">
+
+    <div class="left">
+        <h1>🎁 Enter Password<br>for a Surprise 🎁</h1>
+    </div>
+
+    <div class="right">
+
+        <input
+            type="password"
+            maxlength="4"
+            id="password"
+            placeholder="2607">
+
+        <br><br>
+
+        <button onclick="checkPassword()">
+            Open Surprise ❤️
+        </button>
+
+        <p id="wrongPassword"></p>
+
+    </div>
+
+</div>
+
+<!-- MAIN WEBSITE -->
+
+<div id="mainWebsite" class="hidden">
+
+    <section class="hero">
+
+        <h1 class="title">
+            🎉 Happy Birthday Sadbhawna 🎉
+        </h1>
+
+        <p class="subtitle">
+            Today is all about you ❤️
+        </p>
+
+    </section>
+
+    <!-- Cake Section -->
+
+    <section class="cakeSection">
+
+        <h2>
+            Click here to blow the candle 🕯️
+        </h2>
+
+        <div id="cake" onclick="blowCandle()">
+
+            <div class="flame" id="flame"></div>
+
+            <div class="candle"></div>
+
+            <div class="cakeBody"></div>
+
+        </div>
+
+        <h1 id="countdown"></h1>
+
+        <h2 id="wishMessage"></h2>
+
+    </section>
+
+    <!-- Photos -->
+
+    <section class="photos">
+
+        <h2>📸 Beautiful Memories</h2>
+
+        <img src="photo1.jpg" class="photo">
+
+        <img src="photo2.jpg" class="photo">
+
+    </section>
+
+    <!-- Gift Boxes -->
+
+    <section class="gifts">
+
+        <h2>🎁 Open Your Gifts</h2>
+
+        <div class="giftContainer">
+
+            <button class="gift" onclick="openGift(1)">🎁 Gift 1</button>
+
+            <button class="gift" onclick="openGift(2)">🎁 Gift 2</button>
+
+            <button class="gift" onclick="openGift(3)">🎁 Gift 3</button>
+
+            <button class="gift" onclick="openGift(4)">🎁 Gift 4</button>
+
+            <button class="gift" onclick="openGift(5)">🎁 Gift 5</button>
+
+        </div>
+
+    </section>
+
+</div>
+
+<!-- LETTER POPUP -->
+
+<div id="letterPopup" class="popup hidden">
+
+    <div class="popupContent">
+
+        <span class="close" onclick="closeLetter()">
+            ✖
+        </span>
+
+        <h2>❤️ A Letter For You ❤️</h2>
+
+        <p id="letterText">
+
+            Your letter will appear here.
+
+        </p>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
